@@ -13,8 +13,8 @@ VHDL (VHSIC Hardware Description Language) -> VHSIC (Very High Speed Integrated 
 
 # Structure of a VHDL Design Description
 <p align="center">
-  <img src="/assets/images/fundamentalVHDL/1.png" alt="Tampilan Vivado Project" width="680">
-  <br><em>Struktur Desain VHDL</em>
+	<img src="{{ '/assets/images/fundamentalVHDL/1.png' | relative_url }}" alt="Tampilan Vivado Project" width="680">
+	<br><em>Struktur Desain VHDL</em>
 </p>
 
 ## Library Units (Design Units)
@@ -25,7 +25,7 @@ Biasanya unit desain dari VHDL itu terdiri dari
 - Configuration (optional) -- digunakan untuk **menentukan secara eksplisit** entity dan architecture, mapping komponen 
 
 <p align="center">
-  <img src="/assets/images/fundamentalVHDL/2.png">
+  <img src="{{ '/assets/images/fundamentalVHDL/2.png' | relative_url }}">
   <br><em>3 Pilar Utama VHDL</em>
 </p>
 

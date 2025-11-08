@@ -7,6 +7,7 @@ title: "Hello World!"
 date: 2025-01-12 10:00:00 +0700
 categories: [introduction]
 tags: [hello, introduction, first-post]
+excerpt: "hi!!"
 # Optional extras
 # excerpt: "Tulisan perdana—kenapa saya mulai nulis lagi."
 # header:

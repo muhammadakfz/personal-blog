@@ -1,0 +1,24 @@
+<!-- KaTeX re-render fallback: ensures math processed after dynamic layout scripts -->
+<script>
+function runKatex() {
+  if (typeof renderMathInElement === 'function') {
+    const target = document.querySelector('.page__content') || document.body;
+    renderMathInElement(target, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      throwOnError: false
+    });
+  }
+}
+document.addEventListener('DOMContentLoaded', runKatex);
+// In case KaTeX loads late (defer), poll briefly
+let katexTries = 0;
+const katexPoll = setInterval(function(){
+  if (typeof renderMathInElement === 'function') { runKatex(); clearInterval(katexPoll); }
+  if (++katexTries > 20) clearInterval(katexPoll);
+}, 250);
+</script>

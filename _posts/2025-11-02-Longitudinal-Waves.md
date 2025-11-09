@@ -343,8 +343,111 @@ Bulk modulus dalam konstanta Lamé atau Young–Poisson bisa ditulis:
 $$ \boxed{\; B = \lambda + \tfrac{2}{3}\mu = \frac{Y}{3(1-2\sigma)} \;} $$
 {: .text-center}
 
-Ringkas kecepatan dalam bentuk campuran bulk–shear:
+Kecepatan dalam bentuk campuran bulk–shear:
 
 $$ \boxed{\; c_L = \sqrt{\frac{B + \tfrac{4}{3}\mu}{\rho}} \;} \qquad
 \boxed{\; c_T = \sqrt{\frac{\mu}{\rho}} \;} $$
 {: .text-center}
+
+### Longitudinal Waves in a Periodic Structure
+
+Gelombang longitudinal juga dapat merambat dalam struktur periodik, seperti rantai massa-pegas. Model sederhana ini memberikan informasi mengenai perilaku gelombang dalam media diskrit. 
+
+
+#### Kekakuan Antar-Atom dan Young’s Modulus
+
+<p align="center">
+	<img src="{{ '/assets/images/longitudinalWave/3.png' | relative_url }}" width="680">
+	<br>
+</p>
+
+Anggap kisi 1D dengan jarak antarneighbor $a$. Dua atom yang berdekatan dihubungkan oleh “pegas” efektif dengan kekakuan $s$ (gaya per perpindahan). Untuk gelombang longitudinal, perpindahan antar-atom $\eta$ menghasilkan strain $\varepsilon = \eta/a$. Gaya pemulih normal yang bekerja pada muka sel luas $a^2$ sebanding dengan $s\eta/a^2 = (s/a)\,\varepsilon$ sehingga rasio tegangan–regangan (Young’s modulus) pada skala makro adalah
+
+$$ \boxed{\; Y = \frac{s}{a} \;} \qquad \text{atau setara} \qquad \boxed{\; s = Y a \;} $$
+{: .text-center}
+
+Dengan massa atom efektif per sel $m \approx \rho a^3$, frekuensi osilasi longitudinal atom yang dihubungkan oleh $s$ diperkirakan
+
+$$ \boxed{\; \nu = \frac{\omega}{2\pi} \approx \frac{1}{2\pi} \sqrt{\frac{s}{m}} \approx \frac{1}{2\pi a}\sqrt{\frac{Y}{\rho}} \approx \frac{c_0}{2\pi a} \;} $$
+{: .text-center}
+
+di mana $c_0$ adalah kecepatan bunyi di padatan (orde $\sim 5\times10^3\,\text{m s}^{-1}$). Dengan $a \approx 2\times10^{-10}\,\text{m}$, didapat $\nu \approx 3\times10^{12}\,\text{Hz}$ (wilayah inframerah).
+
+#### Model Diskret dan Dispersi
+
+Untuk deskripsi lebih presisi, rantai diskret 1D memenuhi persamaan gerak partikel ke-$r$:
+
+$$ m\,\ddot{\eta}_r = s\,(\eta_{r+1} + \eta_{r-1} - 2\eta_r), \qquad s = \frac{T}{a}. $$
+{: .text-center}
+
+Dengan ansatz gelombang $\eta_r = \eta_{\max} e^{\,i(\omega t - k r a)}$ diperoleh relasi dispersi
+
+$$ \boxed{\; \omega^2 = \frac{4s}{m}\,\sin^2\!\left(\frac{k a}{2}\right) \;} $$
+{: .text-center}
+
+### Reflection and Transmission of Sound Waves at Boundaries
+
+<p align="center">
+	<img src="{{ '/assets/images/longitudinalWave/4.png' | relative_url }}" width="680">
+	<br>
+</p>
+
+Ketika gelombang suara bidang (plane wave) normal incidence datang pada batas dua medium dengan impedansi akustik spesifik berbeda $Z_1 = \rho_1 c_1$ dan $Z_2 = \rho_2 c_2$, sebagian energi dipantulkan dan sebagian diteruskan. Kondisi batas fisik: partikel di permukaan kontak tidak boleh “tercabik”, sehingga kecepatan partikel kontinu; dan tekanan (gaya per luas) juga kontinu.
+
+#### Normal Incidence
+Dengan indeks $i$ (incident), $r$ (reflected, arah balik), $t$ (transmitted, masuk medium 2):
+
+$$ \dot{\eta}_i + \dot{\eta}_r = \dot{\eta}_t, \qquad p_i + p_r = p_t. $$
+{: .text-center}
+
+Untuk gelombang bidang harmonik 1D: hubungan tekanan–kecepatan partikel (dengan titik di atas menyatakan turunan waktu)
+
+$$ p = Z \, \dot{\eta} \quad \text{(gelombang maju)}, \qquad p = - Z \, \dot{\eta} \quad \text{(gelombang mundur)}. $$
+{: .text-center}
+
+Sehingga: 
+- $p_i = Z_1 \dot{\eta}_i$
+- $p_r = - Z_1 \dot{\eta}_r$
+- $p_t = Z_2 \dot{\eta}_t$.
+
+Masukkan ke kontinuitas tekanan: $Z_1 \dot{\eta}_i - Z_1 \dot{\eta}_r = Z_2 \dot{\eta}_t$.
+Gunakan kontinuitas kecepatan: $\dot{\eta}_t = \dot{\eta}_i + \dot{\eta}_r$.
+
+Eliminasi $u_t$ memberi:
+
+$$ Z_1 \dot{\eta}_i - Z_1 \dot{\eta}_r = Z_2 (\dot{\eta}_i + \dot{\eta}_r) \;\Rightarrow\; (Z_1 - Z_2) \dot{\eta}_i = (Z_1 + Z_2) \dot{\eta}_r. $$
+{: .text-center}
+
+Rasio amplitudo kecepatan partikel (\(\dot{\eta}\)) terpantul dan transmisi:
+
+$$ \boxed{\; \frac{\dot{\eta}_r}{\dot{\eta}_i} = \frac{Z_1 - Z_2}{Z_1 + Z_2} \;} \qquad \boxed{\; \frac{\dot{\eta}_t}{\dot{\eta}_i} = \frac{2 Z_1}{Z_1 + Z_2} \;} $$
+{: .text-center}
+
+Dari hubungan 
+- $p_r = -Z_1 \dot{\eta}_r$
+- $p_i = Z_1 \dot{\eta}_i$
+- $p_t = Z_2 \dot{\eta}_t$
+
+diperoleh rasio amplitudo tekanan terpantul dan transmisi:
+
+$$ \boxed{\; \frac{p_r}{p_i} = \frac{Z_2 - Z_1}{Z_1 + Z_2} = -\frac{\dot{\eta}_r}{\dot{\eta}_i} \;} \qquad \boxed{\; \frac{p_t}{p_i} = \frac{2 Z_2}{Z_1 + Z_2} = \frac{Z_2}{Z_1} \frac{\dot{\eta}_t}{\dot{\eta}_i} \;} $$
+{: .text-center}
+
+jika $Z_1 > Z_2$ maka $u_r/u_i > 0$ (kecepatan incident dan reflected sefasa) sedangkan $p_r/p_i < 0$ (tekanan berlawanan fasa). Jika $Z_1 < Z_2$ kebalikannya: tekanan sefasa, kecepatan berlawanan fasa.
+
+### Reflection and Transmission of Sound Intensity
+
+Bentuk setara jika ditulis eksplisit dengan nilai rms (akar-mean-kuadrat) kecepatan partikel:
+
+$$ \boxed{\; \frac{I_r}{I_i} = \frac{Z_1\,\langle \dot{\eta}_r^2 \rangle_{\mathrm{rms}}}{Z_1\,\langle \dot{\eta}_i^2 \rangle_{\mathrm{rms}}} = \left( \frac{Z_1 - Z_2}{Z_1 + Z_2} \right)^2 \;} $$
+{: .text-center}
+
+$$ \boxed{\; \frac{I_t}{I_i} = \frac{Z_2\,\langle \dot{\eta}_t^2 \rangle_{\mathrm{rms}}}{Z_1\,\langle \dot{\eta}_i^2 \rangle_{\mathrm{rms}}} = \left( \frac{2 Z_1}{Z_1 + Z_2} \right)^2 \frac{Z_2}{Z_1} = \frac{4 Z_1 Z_2}{(Z_1 + Z_2)^2} \;} $$
+{: .text-center}
+
+Konservasi energi (tanpa rugi/absorpsi) pada insiden normal:
+
+$$ \boxed{\; \frac{I_r}{I_i} + \frac{I_t}{I_i} = 1 \;} \qquad \text{atau} \qquad \boxed{\; I_i = I_t + I_r \;} $$
+{: .text-center}
+
+Catatan: memakai amplitudo puncak (peak) atau rms memberikan $R$ dan $T$ yang sama karena faktor skala saling hilang dalam perbandingan.

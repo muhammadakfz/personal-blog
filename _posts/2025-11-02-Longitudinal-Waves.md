@@ -625,3 +625,6 @@ Dengan $I = 10^{-10} I_0$ dan $I_0 = 10\,\mathrm{W/m^2}$, $\nu = 500\,\mathrm{Hz
 
 $$ \eta = \frac{1}{2\pi (500)} \sqrt{ \frac{2\times 10^{-10} (10)}{1.29\times 330} } \approx 1\times10^{-10}\,\mathrm{m}. $$
 {: .text-center}
+
+### References
+- H. J. Pain, *The Physics of Vibrations and Waves*, 6th ed. (Wiley, 2013).

@@ -126,7 +126,7 @@ Untuk gas ideal adiabatik:
 $$ c = \sqrt{\frac{\gamma P_0}{\rho_0}}. $$
 {: .text-center}
 
-Catatan: Kompresibilitas $\kappa$ adalah kebalikan dari modulus kompresi, $\kappa = 1/B$.
+Kompresibilitas $\kappa$ adalah kebalikan dari modulus kompresi, $\kappa = 1/B$.
 
 Semua perubahan adiabatik dalam gas mengikuti hubungan: $$ P V^\gamma = \text{konstanta} $$.
 
@@ -291,7 +291,7 @@ Bulk modulus padatan isotropik:
 $$ \boxed{\; B = \lambda + \tfrac{2}{3}\mu = \frac{Y}{3(1-2\sigma)} \;} $$
 {: .text-center}
 
-Catatan cepat nilai tipikal: baja ($\sigma \approx 0.30$), aluminium ($\approx 0.33$), kaca ($\approx 0.22$), karet alam ($\approx 0.49$).
+baja ($\sigma \approx 0.30$), aluminium ($\approx 0.33$), kaca ($\approx 0.22$), karet alam ($\approx 0.49$).
 
 Kecepatan gelombang longitudinal dan geser dapat ditulis dalam beberapa bentuk ekuivalen:
 
@@ -394,7 +394,6 @@ $$ \boxed{\; \omega^2 = \frac{4s}{m}\,\sin^2\!\left(\frac{k a}{2}\right) \;} $$
 
 Ketika gelombang suara bidang (plane wave) normal incidence datang pada batas dua medium dengan impedansi akustik spesifik berbeda $Z_1 = \rho_1 c_1$ dan $Z_2 = \rho_2 c_2$, sebagian energi dipantulkan dan sebagian diteruskan. Kondisi batas fisik: partikel di permukaan kontak tidak boleh “tercabik”, sehingga kecepatan partikel kontinu; dan tekanan (gaya per luas) juga kontinu.
 
-#### Normal Incidence
 Dengan indeks $i$ (incident), $r$ (reflected, arah balik), $t$ (transmitted, masuk medium 2):
 
 $$ \dot{\eta}_i + \dot{\eta}_r = \dot{\eta}_t, \qquad p_i + p_r = p_t. $$
@@ -450,4 +449,4 @@ Konservasi energi (tanpa rugi/absorpsi) pada insiden normal:
 $$ \boxed{\; \frac{I_r}{I_i} + \frac{I_t}{I_i} = 1 \;} \qquad \text{atau} \qquad \boxed{\; I_i = I_t + I_r \;} $$
 {: .text-center}
 
-Catatan: memakai amplitudo puncak (peak) atau rms memberikan $R$ dan $T$ yang sama karena faktor skala saling hilang dalam perbandingan.
+Amplitudo puncak (peak) atau rms memberikan $R$ dan $T$ yang sama karena faktor skala saling hilang dalam perbandingan.

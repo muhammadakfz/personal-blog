@@ -4,7 +4,7 @@ date: 2025-11-02
 categories: Physics Waves
 tags: [Waves, Longitudinal Waves, Sound Waves, Physics]
 toc: true
-toc_sticky: true
+toc_sticky: false
 excerpt: "Ringkasan rangkumanku mata kuliah Getaran dan Gelombang, tentang Gelombang Longitudinal."
 ---
 
@@ -267,7 +267,7 @@ $$ c_L = \sqrt{\frac{\lambda + 2\mu}{\rho}}, \qquad c_S = \sqrt{\frac{\mu}{\rho}
 
 Untuk batang/rod tipis (uniaxial stress, limit 1D), kecepatan gelombang longitudinal sederhana mendekati $c \approx \sqrt{Y/\rho}$. Perbedaan ini berasal dari kondisi tegangan 3D vs 1D.
 
-### Intermezzo: Media Padat — Poisson Ratio dan Konstanta Lamé
+### Rasio Poisson dan Konstanta Lamé
 Pada padatan, kompresi longitudinal di sumbu $x$ (strain $\partial \eta/\partial x$) menimbulkan distorsi lateral di $y$ (strain $\partial \beta/\partial y$) dengan tanda berlawanan. Rasio keduanya disebut Poisson ratio. Notasi di buku menggunakan $\sigma$ untuk Poisson ratio (umumnya ditulis $\nu$):
 
 $$ \sigma \equiv -\,\frac{\partial \beta/\partial y}{\partial \eta/\partial x}. $$

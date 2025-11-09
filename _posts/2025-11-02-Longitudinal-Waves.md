@@ -454,6 +454,9 @@ $$ \boxed{\; \frac{I_r}{I_i} + \frac{I_t}{I_i} = 1 \;} \qquad \text{atau} \qquad
 
 Amplitudo puncak (peak) atau rms memberikan $R$ dan $T$ yang sama karena faktor skala saling hilang dalam perbandingan.
 
+<br>
+--- 
+<br>
 
 ### Contoh Soal
 

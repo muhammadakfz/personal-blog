@@ -258,16 +258,7 @@ Intensitas (daya per luas) untuk gelombang 1D maju adalah energi rata-rata dikal
 $$ \boxed{\; I = \langle E_{total} \rangle c = \frac{1}{2} \rho_0 c \omega^2 \eta_m^2 = \frac{p_m^2}{2 \rho_0 c} \;} $$
 {: .text-center}
 
-### Sound Waves in Solids (Ringkas)
-
-Gelombang elastik dalam padatan ada dua mode utama: longitudinal (P) dan geser/transversal (S). Untuk padatan homogen isotropik (bulk solid):
-
-$$ c_L = \sqrt{\frac{\lambda + 2\mu}{\rho}}, \qquad c_S = \sqrt{\frac{\mu}{\rho}}. $$
-{: .text-center}
-
-Untuk batang/rod tipis (uniaxial stress, limit 1D), kecepatan gelombang longitudinal sederhana mendekati $c \approx \sqrt{Y/\rho}$. Perbedaan ini berasal dari kondisi tegangan 3D vs 1D.
-
-### Rasio Poisson dan Konstanta Lamé
+### Poisson Ratio dan Konstanta Lamé
 Pada padatan, kompresi longitudinal di sumbu $x$ (strain $\partial \eta/\partial x$) menimbulkan distorsi lateral di $y$ (strain $\partial \beta/\partial y$) dengan tanda berlawanan. Rasio keduanya disebut Poisson ratio. Notasi di buku menggunakan $\sigma$ untuk Poisson ratio (umumnya ditulis $\nu$):
 
 $$ \sigma \equiv -\,\frac{\partial \beta/\partial y}{\partial \eta/\partial x}. $$
@@ -281,6 +272,7 @@ $$ \boxed{\; \sigma = \frac{\lambda}{2(\lambda + \mu)} \;} \qquad
 \boxed{\; \lambda = \frac{\sigma Y}{(1+\sigma)(1-2\sigma)} \;} \qquad
 \boxed{\; Y = \lambda + 2\mu - 2\lambda\sigma \;} $$
 {: .text-center}
+
 
 
 

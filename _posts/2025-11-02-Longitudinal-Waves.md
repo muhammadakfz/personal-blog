@@ -600,19 +600,14 @@ $$ \frac{p_{\mathrm{rms}}}{1\,\text{atm}} \approx \frac{65}{1.013\times10^5} \ap
 
 Show that the displacement amplitude of an air molecule at a painful sound level of $10\,\mathrm{W/m^2}$ at $500\,\mathrm{Hz}$ is approximately $6.9\times10^{-5}\,\mathrm{m}$.
 
-**Solution:** Relasi medan akustik gelombang bidang: $p = \rho c\,\eta$ dengan $\eta$ kecepatan partikel, dan $\eta = \omega\,\xi$ (di mana $\xi$ adalah amplitudo perpindahan). Maka untuk amplitudo puncak
+**Solution:** Untuk gelombang bidang harmonik,
 
-$$ \xi_{\max} = \frac{p_{\max}}{\rho c\,\omega}. $$
+$$ I = \tfrac{1}{2} \rho_0 c\,\omega^2\,\eta^2 \quad \Rightarrow \quad \eta = \frac{1}{\omega} \sqrt{\frac{2I}{\rho_0 c}} = \frac{1}{2\pi f}\,\sqrt{\frac{2I}{\rho_0 c}}. $$
 {: .text-center}
 
-Dari Soal 3, $p_{\max} = \sqrt{2}\,p_{\mathrm{rms}} = \sqrt{2\,I\,\rho c}$. Dengan $f=500\,\mathrm{Hz}$, $\omega=2\pi f$:
+Dengan $I=10\,\mathrm{W/m^2}$, $\rho_0 c = 1.29\times 330 = 425.7\,\mathrm{kg/(m^2\,s)}$ dan $f=500\,\mathrm{Hz}$:
 
-$$ \xi_{\max} = \frac{\sqrt{2\,I\,\rho c}}{\rho c\,2\pi f} = \frac{\sqrt{2I}}{2\pi f\,\sqrt{\rho c}}. $$
-{: .text-center}
-
-Substitusi $I=10\,\mathrm{W/m^2}$, $\rho c=425.7$ dan $f=500\,\mathrm{Hz}$ memberi
-
-$$ \xi_{\max} \approx \frac{\sqrt{20}}{2\pi\,500\,\sqrt{425.7}} \approx 6.9\times10^{-5}\,\mathrm{m}. $$
+$$ \eta \approx \frac{1}{2\pi\times 500} \sqrt{\frac{2\times 10}{425.7}} \;\approx\; 6.9\times10^{-5}\,\mathrm{m}. $$
 {: .text-center}
 
 #### Displacement at Barely Audible Level (500 Hz)

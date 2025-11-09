@@ -55,7 +55,7 @@ $$ \boxed{s = \frac{\Delta \rho}{\rho_0} = \frac{\rho - \rho_0}{\rho_0} = \frac{
 {: .text-center}
 
 
-### Fixed Mass (Konservasi Massa)
+#### Fixed Mass
 
 Konservasi massa untuk elemen fluida kecil menyatakan bahwa massa tetap:
 
@@ -92,7 +92,7 @@ Dengan definisi $s = \dfrac{\Delta \rho}{\rho_0} = \dfrac{\rho_d}{\rho_0}$ dan $
 $$ \boxed{\; s = -\delta = -\frac{v}{V_0} = \frac{\rho_d}{\rho_0} \;} $$
 {: .text-center}
 
-### Sifat Elastis Gas: Modulus Kompresi (Bulk Modulus)
+#### Sifat Elastis Gas: Modulus Kompresi (Bulk Modulus)
 
 Sifat elastis (kemampuan dikompresi) gas dinyatakan oleh modulus kompresi (bulk modulus) $B$.
 
@@ -140,7 +140,7 @@ atau
 $$ -V \frac{dP}{dV} = \gamma P = B_a$$
 {: .text-center}
 
-### Persamaan Gerak
+#### Persamaan Gerak
 
 <p align="center">
 	<img src="{{ '/assets/images/longitudinalWave/1.png' | relative_url }}" width="680">
@@ -197,7 +197,7 @@ Karena $s = -\delta$, maka $s = ik\,\eta$. Dengan modulus adiabatik $B_a = \gamm
 $$ p = B_a\,s = i\,B_a\,k\,\eta. $$
 {: .text-center}
 
-### Energi Gelombang Suara
+#### Energi Gelombang Suara
 
 Untuk gelombang longitudinal kecil di gas, energi tersimpan sebagai:
 
@@ -258,22 +258,93 @@ Intensitas (daya per luas) untuk gelombang 1D maju adalah energi rata-rata dikal
 $$ \boxed{\; I = \langle E_{total} \rangle c = \frac{1}{2} \rho_0 c \omega^2 \eta_m^2 = \frac{p_m^2}{2 \rho_0 c} \;} $$
 {: .text-center}
 
-### Poisson Ratio dan Konstanta Lamé
-Pada padatan, kompresi longitudinal di sumbu $x$ (strain $\partial \eta/\partial x$) menimbulkan distorsi lateral di $y$ (strain $\partial \beta/\partial y$) dengan tanda berlawanan. Rasio keduanya disebut Poisson ratio. Notasi di buku menggunakan $\sigma$ untuk Poisson ratio (umumnya ditulis $\nu$):
+### Sound Waves in Solids
+Gelombang longitudinal lebih mudah merambat di padatan karena sifat elastisnya yang lebih kuat dibanding fluida. Padatan dapat menahan tegangan geser (shear stress) selain tegangan normal (normal stress) yang relevan untuk gelombang longitudinal.
+
+$$\boxed{\; \frac{\partial^2 \eta}{\partial x^2} = \frac{1}{c^2} \, \frac{\partial^2 \eta}{\partial t^2}, \; c^2 = \frac{Y}{\rho} \;} $$
+{: .text-center}
+
+dimana $Y$ adalah Young's modulus (modulus elastisitas) padatan.
+
+#### Poisson Ratio dan Konstanta Elastik Isotropik
+Pada padatan isotropik, jika batang/elemen diregangkan atau dikompresi sepanjang sumbu $x$ (strain longitudinal $\partial \eta/\partial x$), ia akan mengalami perubahan dimensi lateral di arah $y$ (strain lateral $\partial \beta/\partial y$) dengan tanda berlawanan. Rasio efek lateral terhadap longitudinal didefinisikan sebagai Poisson ratio. Dalam buku dipakai simbol $\sigma$ (banyak literatur memakai $\nu$):
 
 $$ \sigma \equiv -\,\frac{\partial \beta/\partial y}{\partial \eta/\partial x}. $$
 {: .text-center}
 
-di mana $Y$ adalah modulus Young (Young's modulus) dari material padatan tersebut.
+Makna fisik: $\sigma$ besar ($\to 0.5$) berarti material "hampir inkompresibel" (karet: mendekati $0.49$) — sulit mengubah volume, tetapi mudah berubah bentuk. Material dengan $\sigma$ kecil (misal, gabus $\approx 0$) menunjukkan perubahan lateral sangat kecil saat diregangkan. Batas kestabilan termodinamik untuk medium elastik isotropik linear: $-1 < \sigma < 1/2$.
 
-Dua konstanta elastik Lamé untuk padatan adalah $\lambda$ (Lamé first parameter) dan $\mu$ (shear modulus, "transverse coefficient of rigidity").
+Parameter elastik dapat dinyatakan dalam berbagai set: $(Y, \sigma)$, $(\lambda, \mu)$, atau $(B, \mu)$. Hubungan isotropik linear (semua ekuivalen) adalah:
 
 $$ \boxed{\; \sigma = \frac{\lambda}{2(\lambda + \mu)} \;} \qquad
 \boxed{\; \lambda = \frac{\sigma Y}{(1+\sigma)(1-2\sigma)} \;} \qquad
-\boxed{\; Y = \lambda + 2\mu - 2\lambda\sigma \;} $$
+\boxed{\; \mu = \frac{Y}{2(1+\sigma)} \;} $$
 {: .text-center}
 
+Ekspresi Young's modulus dalam $\lambda,\mu,\sigma$ yang dipakai di buku:
+
+$$ \boxed{\; Y = \lambda + 2\mu - 2\lambda\sigma = \mu\,\frac{3\lambda + 2\mu}{\lambda + \mu} \;} $$
+{: .text-center}
+
+Bulk modulus padatan isotropik:
+
+$$ \boxed{\; B = \lambda + \tfrac{2}{3}\mu = \frac{Y}{3(1-2\sigma)} \;} $$
+{: .text-center}
+
+Catatan cepat nilai tipikal: baja ($\sigma \approx 0.30$), aluminium ($\approx 0.33$), kaca ($\approx 0.22$), karet alam ($\approx 0.49$).
+
+Kecepatan gelombang longitudinal dan geser dapat ditulis dalam beberapa bentuk ekuivalen:
+
+$$ \boxed{\; c_L^2 = \frac{\lambda + 2\mu}{\rho} = \frac{B + \tfrac{4}{3}\mu}{\rho} = \frac{Y(1-\sigma)}{\rho(1+\sigma)(1-2\sigma)} \;} \qquad
+\boxed{\; c_T^2 = \frac{\mu}{\rho} = \frac{Y}{2\rho(1+\sigma)} \;} $$
+{: .text-center}
+
+Notasi $c_T$ (transverse) sering juga ditulis $c_S$ (shear). Bentuk $c_L^2 = (\lambda + 2\mu)/\rho$ langsung menunjukkan bahwa kenaikan $\mu$ (rigiditas geser) meningkatkan kecepatan longitudinal karena medium lebih resisten terhadap perubahan bentuk simultan yang menyertai kompresi volumetrik.
 
 
+#### Gelombang Geser (Transverse / Shear) di Padatan Bulk
 
+<p align="center">
+	<img src="{{ '/assets/images/longitudinalWave/2.png' | relative_url }}" width="680">
+	<br>
+</p>
 
+Ambil medan perpindahan transversal $\beta(x,t)$ (arah tegak lurus $x$). Shear strain lokal: $\partial \beta/\partial x$. Tegangan geser (shear stress) linear isotropik:
+
+$$ T(x) = \mu \, \frac{\partial \beta}{\partial x}. $$
+{: .text-center}
+
+Keseimbangan gaya pada elemen tipis panjang $dx$ (luas penampang $A$):
+
+$$ [T(x+dx) - T(x)]\,A \approx \frac{\partial T}{\partial x} A\,dx = \rho \, A \, dx \, \ddot{\beta}. $$
+{: .text-center}
+
+Dalam limit $dx \to 0$ (persis):
+
+$$ \frac{\partial}{\partial x}\!\left( \mu \, \frac{\partial \beta}{\partial x} \right) = \rho \, \ddot{\beta}. $$
+{: .text-center}
+
+Untuk material homogen ($\mu$ konstan) persamaan menyederhana menjadi:
+
+$$ \mu \, \frac{\partial^2 \beta}{\partial x^2} = \rho \, \frac{\partial^2 \beta}{\partial t^2} \;\; \Rightarrow \;\; \boxed{\; \frac{\partial^2 \beta}{\partial x^2} = \frac{1}{c_S^2} \, \frac{\partial^2 \beta}{\partial t^2}, \quad c_S^2 = \frac{\mu}{\rho} \;} $$
+{: .text-center}
+
+Rigiditas geser $\mu$ meningkatkan kedua kecepatan karena bentuk longitudinal di padatan melibatkan sedikit deformasi shear di samping kompresi volumetrik; hasilnya:
+
+$$ \boxed{\; c_L^2 = \frac{\lambda + 2\mu}{\rho} \;} $$
+{: .text-center}
+
+Pada batang tipis (uniaxial) sering dipakai pendekatan $c \approx \sqrt{Y/\rho}$. Karena
+$$ c_L^2 = \frac{Y(1-\sigma)}{\rho(1+\sigma)(1-2\sigma)}, $$
+dan $\frac{(1-\sigma)}{(1+\sigma)(1-2\sigma)} > 1$ untuk $0 < \sigma < 1/2$, maka kecepatan bulk 3D lebih besar daripada $\sqrt{Y/\rho}$ (rod approximation). Untuk $\sigma \to 1/2$ (limit inkompresibel) $c_L$ tumbuh besar karena $B \to \infty$.
+
+Bulk modulus dalam konstanta Lamé atau Young–Poisson bisa ditulis:
+
+$$ \boxed{\; B = \lambda + \tfrac{2}{3}\mu = \frac{Y}{3(1-2\sigma)} \;} $$
+{: .text-center}
+
+Ringkas kecepatan dalam bentuk campuran bulk–shear:
+
+$$ \boxed{\; c_L = \sqrt{\frac{B + \tfrac{4}{3}\mu}{\rho}} \;} \qquad
+\boxed{\; c_T = \sqrt{\frac{\mu}{\rho}} \;} $$
+{: .text-center}

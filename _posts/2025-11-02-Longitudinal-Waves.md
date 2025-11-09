@@ -453,3 +453,175 @@ $$ \boxed{\; \frac{I_r}{I_i} + \frac{I_t}{I_i} = 1 \;} \qquad \text{atau} \qquad
 {: .text-center}
 
 Amplitudo puncak (peak) atau rms memberikan $R$ dan $T$ yang sama karena faktor skala saling hilang dalam perbandingan.
+
+
+### Contoh Soal
+
+#### Gelombang Longitudinal dalam Pipa Terbuka
+Pressure oscillations in a hollow pipe of length L are described by the wave equation
+
+$$
+\frac{\partial^2 p}{\partial z^2} = \frac{\rho_0}{B} \, \frac{\partial^2 p}{\partial t^2}
+$$
+{: .text-center}
+
+where $p$ is the over-pressure (over and above the one atmosphere ambient pressure), $\rho_0$ is the density of the gas in the pipe, $B$ is the bulk modulus, and $z$ is the longitudinal direction along the pipe. Assuming a solution of the form
+
+$$
+p(z,t) = [\,C \cos k z + D \sin k z\,] \cos \omega t
+$$
+{: .text-center}
+
+find all the unknowns $(C, D, B, \text{ and } \omega)$ for the case where the pipe is open at both ends and $p(z = L/2, \, t = 0) = p_0$.
+
+**Solution:**
+
+- $$p(0, t) = 0 \Rightarrow p(0, t) = [C \cos(0) + D \sin(0)] \cos(\omega t) = C \cos(\omega t) $$
+  
+  Agar persamaan ini bernilai nol untuk setiap waktu $t$, maka $C$ harus nol.
+  
+  $$ C = 0 $$
+
+  Dengan demikian, solusi menjadi:
+  
+  $$ p(z, t) = D \sin(kz) \cos(\omega t) $$
+
+- $$p(L, t) = 0 \Rightarrow p(L, t) = D \sin(kL) \cos(\omega t) = 0 $$
+  
+  Untuk solusi yang tidak trivial ($D \neq 0$), maka $\sin(kL)$ harus nol.
+  
+  $$ \sin(kL) = 0 \implies kL = n\pi $$
+  
+  di mana $n$ adalah bilangan bulat positif ($n=1, 2, 3, \dots$). Jadi, bilangan gelombang $k$ adalah:
+  
+  $$ k = \frac{n\pi}{L} $$
+
+Gunakan kondisi awal $p(L/2, t=0) = p_0$.
+
+$$ p(L/2, 0) = D \sin\left(k \frac{L}{2}\right) \cos(0) = p_0 $$
+
+$$ D \sin\left(\frac{n\pi}{L} \frac{L}{2}\right) = p_0 $$
+
+$$ D \sin\left(\frac{n\pi}{2}\right) = p_0 $$
+
+Maka, konstanta $D$ adalah:
+
+$$ D = \frac{p_0}{\sin(n\pi/2)} = \frac{p_0}{(-1)^{(n-1)/2}} \quad (\text{untuk } n \text{ ganjil}) $$
+
+Substitusikan bentuk solusi ke dalam persamaan gelombang awal.
+Turunan parsial dari $p(z,t)$ adalah:
+- $\frac{\partial^2 p}{\partial z^2} = -k^2 D \sin(kz) \cos(\omega t) = -k^2 p(z,t)$
+- $\frac{\partial^2 p}{\partial t^2} = -\omega^2 D \sin(kz) \cos(\omega t) = -\omega^2 p(z,t)$
+
+Substitusikan ke persamaan gelombang:
+
+$$ -k^2 p(z,t) = \frac{\rho_0}{B} (-\omega^2 p(z,t)) $$
+$$ k^2 = \frac{\rho_0 \omega^2}{B} $$
+
+Dari sini kita bisa mengekspresikan $\omega$ dan $B$.
+
+- **Frekuensi Sudut $\omega$:**
+  
+  $$ \omega^2 = \frac{B k^2}{\rho_0} \implies \omega = k \sqrt{\frac{B}{\rho_0}} $$
+  
+  Karena $k = n\pi/L$:
+  
+  $$ \omega = \frac{n\pi}{L} \sqrt{\frac{B}{\rho_0}} \quad (\text{untuk } n \text{ ganjil}) $$
+
+- **Bulk Modulus $B$:**
+  
+  $$ B = \frac{\rho_0 \omega^2}{k^2} = \rho_0 \left(\frac{\omega L}{n\pi}\right)^2 \quad (\text{untuk } n \text{ ganjil}) $$
+
+Untuk pipa terbuka di kedua ujung ($z=0$ dan $z=L$) dengan kondisi $p(L/2, 0) = p_0$, diperoleh:
+
+$$ \boxed{C = 0}, \quad \boxed{D = \frac{p_0}{(-1)^{(n-1)/2}}}, \quad \boxed{\omega = \frac{n\pi}{L} \sqrt{\frac{B}{\rho_0}}}, \quad \boxed{B = \rho_0 \left(\frac{\omega L}{n\pi}\right)^2} $$
+{: .text-center}
+
+di mana $n$ adalah bilangan bulat ganjil ($n = 1, 3, 5, \dots$).
+
+#### Thermal Velocity and Speed of Sound
+
+Show that in a gas at temperature T the average thermal velocity of a molecule is approximately equal to the velocity of sound.
+
+**Solution:**
+
+Dari teori kinetik gas untuk partikel bermassa $m$ pada temperatur $T$:
+
+$$ \frac{1}{2} m\,v_{\mathrm{rms}}^2 = \frac{3}{2} k_B T \quad\Rightarrow\quad v_{\mathrm{rms}}^2 = \frac{3 k_B T}{m}. $$
+{: .text-center}
+
+Kecepatan bunyi dalam gas ideal (proses adiabatik) adalah
+
+$$ c^2 = \frac{\gamma P}{\rho} = \frac{\gamma RT}{M} = \frac{\gamma N k_B T}{M}. $$
+{: .text-center}
+
+Dengan $M = N m$ (massa molar = jumlah Avogadro dikali massa per molekul), didapat
+
+$$ c^2 = \frac{\gamma k_B T}{m} \quad\Rightarrow\quad m c^2 = \gamma k_B T. $$
+{: .text-center}
+
+Bandingkan dengan hasil kinetik $m v_{\mathrm{rms}}^2 = 3 k_B T$ sehingga
+
+$$ \frac{v_{\mathrm{rms}}}{c} = \sqrt{\frac{3}{\gamma}}. $$
+{: .text-center}
+
+Untuk gas monoatomik $\gamma = 5/3$ maka $v_{\mathrm{rms}}/c = \sqrt{9/5} \approx 1.34$; untuk gas diatomik $\gamma = 7/5$ maka $v_{\mathrm{rms}}/c \approx \sqrt{3/1.4} \approx 1.46$. Jadi keduanya seorde dan dapat dikatakan kira-kira sama besar.
+
+Catatan ringkas selaras dengan gambar: karena $c^2 = \gamma N k_B T / M$, maka
+
+$$ M c^2 = \gamma N k_B T \equiv \alpha k_B T \approx \frac{5}{3} k_B T \quad (\text{gas monoatomik}), $$
+{: .text-center}
+
+yang langsung menunjukkan skala energi per mole setara dengan energi kinetik termal, sehingga kecepatan termal rata-rata molekul dan kecepatan bunyi berbanding melalui faktor konstanta $\sqrt{3/\gamma}$.
+
+#### Acoustic Pressure at the Pain Threshold
+
+The velocity of sound in air density $1.29\,\mathrm{kg/m^3}$ may be taken as $c=330\,\mathrm{m/s}$. Show that the acoustic pressure for the painful sound of $I=10\,\mathrm{W/m^2}$ is about $6.5\times10^{-4}$ of an atmosphere.
+
+**Solution:** 
+
+$$ I = \frac{p_{\mathrm{rms}}^2}{\rho c} \quad\Rightarrow\quad p_{\mathrm{rms}} = \sqrt{I\,\rho c}. $$
+{: .text-center}
+
+Dengan $\rho = 1.29\,\mathrm{kg/m^3}$ dan $c = 330\,\mathrm{m/s}$, $\rho c = 425.7$:
+
+$$ p_{\mathrm{rms}} = \sqrt{10\times 425.7} \approx 65\,\mathrm{Pa}. $$
+{: .text-center}
+
+Bandingkan dengan $1\,\text{atm} = 1.013\times10^5\,\mathrm{Pa}$:
+
+$$ \frac{p_{\mathrm{rms}}}{1\,\text{atm}} \approx \frac{65}{1.013\times10^5} \approx 6.4\times10^{-4} \;\approx\; 6.5\times10^{-4}. $$
+{: .text-center}
+
+#### Displacement Amplitude at Painful Level (500 Hz)
+
+Show that the displacement amplitude of an air molecule at a painful sound level of $10\,\mathrm{W/m^2}$ at $500\,\mathrm{Hz}$ is approximately $6.9\times10^{-5}\,\mathrm{m}$.
+
+**Solution:** Relasi medan akustik gelombang bidang: $p = \rho c\,\eta$ dengan $\eta$ kecepatan partikel, dan $\eta = \omega\,\xi$ (di mana $\xi$ adalah amplitudo perpindahan). Maka untuk amplitudo puncak
+
+$$ \xi_{\max} = \frac{p_{\max}}{\rho c\,\omega}. $$
+{: .text-center}
+
+Dari Soal 3, $p_{\max} = \sqrt{2}\,p_{\mathrm{rms}} = \sqrt{2\,I\,\rho c}$. Dengan $f=500\,\mathrm{Hz}$, $\omega=2\pi f$:
+
+$$ \xi_{\max} = \frac{\sqrt{2\,I\,\rho c}}{\rho c\,2\pi f} = \frac{\sqrt{2I}}{2\pi f\,\sqrt{\rho c}}. $$
+{: .text-center}
+
+Substitusi $I=10\,\mathrm{W/m^2}$, $\rho c=425.7$ dan $f=500\,\mathrm{Hz}$ memberi
+
+$$ \xi_{\max} \approx \frac{\sqrt{20}}{2\pi\,500\,\sqrt{425.7}} \approx 6.9\times10^{-5}\,\mathrm{m}. $$
+{: .text-center}
+
+#### Displacement at Barely Audible Level (500 Hz)
+
+Barely audible sound in air has an intensity of $10^{-10}\,I_0$. Show that the displacement amplitude of an air molecule for sound at this level at $500\,\mathrm{Hz}$ is approximately $10^{-10}\,\mathrm{m}$; that is, about the size of the molecular diameter.
+
+**Solution:** 
+
+$$ \eta = \frac{p_{\max}}{\rho_0 c\,\omega} = \frac{1}{2\pi \nu}\sqrt{\frac{2I}{\rho_0 c}}. $$
+{: .text-center}
+
+Dengan $I = 10^{-10} I_0$ dan $I_0 = 10\,\mathrm{W/m^2}$, $\nu = 500\,\mathrm{Hz}$, $\rho_0 = 1.29\,\mathrm{kg/m^3}$, $c = 330\,\mathrm{m/s}$:
+
+$$ \eta = \frac{1}{2\pi (500)} \sqrt{ \frac{2\times 10^{-10} (10)}{1.29\times 330} } \approx 1\times10^{-10}\,\mathrm{m}. $$
+{: .text-center}

@@ -392,7 +392,10 @@ $$ \boxed{\; \omega^2 = \frac{4s}{m}\,\sin^2\!\left(\frac{k a}{2}\right) \;} $$
 	<br>
 </p>
 
-Ketika gelombang suara bidang (plane wave) normal incidence datang pada batas dua medium dengan impedansi akustik spesifik berbeda $Z_1 = \rho_1 c_1$ dan $Z_2 = \rho_2 c_2$, sebagian energi dipantulkan dan sebagian diteruskan. Kondisi batas fisik: partikel di permukaan kontak tidak boleh “tercabik”, sehingga kecepatan partikel kontinu; dan tekanan (gaya per luas) juga kontinu.
+Bayangkan gelombang suara datar menumbuk tegak lurus (normal incidence) sebuah batas antara dua medium. Kedua medium punya impedansi akustik spesifik berbeda: $Z_1 = \rho_1 c_1$ dan $Z_2 = \rho_2 c_2$. Di batas ini sebagian gelombang memantul, sebagian lagi menerus. Agar dua medium tetap “nempel” tanpa celah, pegang dua aturan simpel:
+
+- Kecepatan partikel di permukaan harus sama di kedua sisi (tidak ada yang tertinggal). Dalam notasi fasor: $\dot{\eta}_i + \dot{\eta}_r = \dot{\eta}_t$.
+- Tekanan di permukaan juga harus sama (gaya seimbang): $p_i + p_r = p_t$.
 
 Dengan indeks $i$ (incident), $r$ (reflected, arah balik), $t$ (transmitted, masuk medium 2):
 

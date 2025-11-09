@@ -570,7 +570,7 @@ $$ \frac{v_{\mathrm{rms}}}{c} = \sqrt{\frac{3}{\gamma}}. $$
 
 Untuk gas monoatomik $\gamma = 5/3$ maka $v_{\mathrm{rms}}/c = \sqrt{9/5} \approx 1.34$; untuk gas diatomik $\gamma = 7/5$ maka $v_{\mathrm{rms}}/c \approx \sqrt{3/1.4} \approx 1.46$. Jadi keduanya seorde dan dapat dikatakan kira-kira sama besar.
 
-Catatan ringkas selaras dengan gambar: karena $c^2 = \gamma N k_B T / M$, maka
+karena $c^2 = \gamma N k_B T / M$, maka
 
 $$ M c^2 = \gamma N k_B T \equiv \alpha k_B T \approx \frac{5}{3} k_B T \quad (\text{gas monoatomik}), $$
 {: .text-center}

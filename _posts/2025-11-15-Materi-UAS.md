@@ -10,7 +10,7 @@ excerpt: "Latihan soal Getaran dan Gelombang tentang materi UAS."
 ## Soal 1
 
 1.  Gelombang bunyi dibangkitkan di udara pada suhu $20^\circ\text{C}$, berapakah kecepatan bunyi di udara jika diketahui satu mol udara memiliki massa $29\text{ gram}$? (Petunjuk: gunakan nilai $\gamma$ untuk udara)
-2.  Sebuah pipa organa tertutup digunakan untuk menghasilkan gelombang bunyi dengan frekuensi dasar $40\text{ Hz}$. Berapakah panjang pipa yang akan digunakan untuk pipa organa tertutup dengan frekuensi dasar tersebut? (Petunjuk: gunakan jawaban pada poin a)
+2.  Sebuah pipa organa tertutup digunakan untuk menghasilkan gelombang bunyi dengan frekuensi dasar $40\text{ Hz}$. Berapakah panjang pipa yang akan digunakan untuk pipa organa tertutup dengan frekuensi dasar tersebut? (Petunjuk: gunakan jawaban pada poin 1.1)
 3.  Berapakah frekuensi selanjutnya dari kasus pada poin b?
 4.  Berapakah fraksi energi yang direfleksikan gelombang bunyi jika gelombang bunyi jatuh normal di permukaan air?
 

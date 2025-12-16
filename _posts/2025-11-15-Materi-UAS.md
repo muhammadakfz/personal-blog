@@ -103,7 +103,9 @@ Diketahui kabel koaksial dengan $r_1 = 1 \text{ mm}$, $r_2 = 2 \text{ mm}$, dan 
 **1. Induktansi Diri ($L$)**
 
 Induktansi per satuan panjang dihitung dengan:
+
 $$ L = \frac{\mu_0}{2\pi} \ln\left(\frac{r_2}{r_1}\right) $$
+
 $$ L = \frac{4\pi \times 10^{-7}}{2\pi} \ln(2) = 2 \times 10^{-7} \cdot 0.693 \approx 138.6 \text{ nH/m} $$
 
 **2. Kapasitansi ($C$)**

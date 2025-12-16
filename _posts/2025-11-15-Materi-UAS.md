@@ -11,7 +11,7 @@ excerpt: "Latihan soal Getaran dan Gelombang tentang materi UAS."
 
 1.  Gelombang bunyi dibangkitkan di udara pada suhu $20^\circ\text{C}$, berapakah kecepatan bunyi di udara jika diketahui satu mol udara memiliki massa $29\text{ gram}$? (Petunjuk: gunakan nilai $\gamma$ untuk udara)
 2.  Sebuah pipa organa tertutup digunakan untuk menghasilkan gelombang bunyi dengan frekuensi dasar $40\text{ Hz}$. Berapakah panjang pipa yang akan digunakan untuk pipa organa tertutup dengan frekuensi dasar tersebut? (Petunjuk: gunakan jawaban pada poin 1.1)
-3.  Berapakah frekuensi selanjutnya dari kasus pada poin b?
+3.  Berapakah frekuensi selanjutnya dari kasus pada poin 1.2?
 4.  Berapakah fraksi energi yang direfleksikan gelombang bunyi jika gelombang bunyi jatuh normal di permukaan air?
 
 ## Soal 2
@@ -52,6 +52,12 @@ Anggap model klasik Drude berlaku bagi material tembaga. Diketahui konsentrasi e
 3. Jika sinar UV dengan panjang gelombang $100 \text{ nm}$ dijatuhkan pada tembaga tersebut, jelaskan apakah sinar UV tersebut dapat berpropagasi di dalam tembaga tersebut.
 
 ---
+
+## Soal Latihan
+<p align="center">
+	<img src="{{ '/assets/images/uas/1.jpeg' | relative_url }}" width="680">
+	<br>
+</p>
 
 ## Pembahasan
 

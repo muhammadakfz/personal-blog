@@ -122,7 +122,7 @@ $$ v = \frac{c}{\sqrt{\epsilon_r \mu_r}} = \frac{3 \times 10^8}{\sqrt{4}} = 1.5 
 
 **5. Sambungan Kabel ($\epsilon_{r2} = 8$)**
 
-Impedansi kabel kedua adalah $Z_{02} = \frac{Z_{01}}{\sqrt{8/4}} = \frac{20.78}{\sqrt{2}} \approx 14.7 \Omega$.
+Impedansi kabel kedua adalah $Z_{2} = \frac{Z_{1}}{\sqrt{8/4}} = \frac{20.78}{\sqrt{2}} \approx 14.7 \Omega$.
 
 *   **Refleksi Tegangan:** $\Gamma_V = \frac{Z_{2} - Z_{1}}{Z_{2} + Z_{1}} = \frac{14.7 - 20.78}{14.7 + 20.78} \approx -0.171$
 *   **Refleksi Arus:** $\Gamma_I = -\Gamma_V \approx 0.171$
